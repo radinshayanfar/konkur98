@@ -57,7 +57,6 @@
 
  <!-- END PRELOADER -->
  
- <!-- GOOGLE ANALYTICS ================================================= -->
 	<!-- HEADER ================================================= -->	  
 	<header>
 		<div class="container">
@@ -69,20 +68,14 @@
 	
 
 	<!--CREATED BY: Appletimer persian team - copy karo sag ... :))) pas copy nakon-->
-<div id="clock" class="clock <?php if (isset($_GET['l']) && $_GET['l'] == 'en')
-								echo 'clock-en';
-							else echo 'clock-fa';
-						?>">
- <script type="text/javascript">
-
-	var nextEvent = moment.tz("2019-07-04 08:00", "Asia/Tehran");
-	$('#clock').countdown(nextEvent.toDate(), function(event) {
-		$(this).html(event.strftime('<?php if (isset($_GET['l']) && $_GET['l'] == 'en')
-								echo '%D Days <br> %H Hours<br> %M Minutes<br> %S Seconds<br>';
-							else echo '%D روز<br> %H ساعت<br> %M دقیقه<br> %S ثانیه<br>';
-						?>'));
-	});
- </script></div>
+<div id="clock" class="clock clock-fa">
+	<script type="text/javascript">
+		var nextEvent = moment.tz("2019-07-04 08:00", "Asia/Tehran");
+		$('#clock').countdown(nextEvent.toDate(), function(event) {
+			$(this).html(event.strftime('%D روز<br> %H ساعت<br> %M دقیقه<br> %S ثانیه'));
+		});
+	</script>
+ </div>
 				</div>	  
 			</div></div> <br> <div class="footer"> چه قدر دیر میفهمیم که زندگی، همین روزهاییست که منتظر گذشتنش هستیم... </div>
 	</header>
