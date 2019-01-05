@@ -58,26 +58,33 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>شمارش معکوس آزمون سراسری 
-					<a href="#" id="major" onclick="major_change(); "> ریاضی </a>
+					<a href="#" id="major">ریاضی</a>
 					سال ۱۳۹۸</h1><br>
 					<p class="lead" style="font-size:20px"></p>
 
 	<!--CREATED BY: Appletimer persian team - copy karo sag ... :))) pas copy nakon-->
-	<div id="clock" class="clock clock-fa">
-		<script type="text/javascript">
-			document.getElementById("major").onclick = function() {major_change()};
+	<div id="clock" class="clock clock-fa"> </div>
 
-			function major_change() {
-				// window.location = "http://www.google.com";
-				var tajrobi = moment.tz("2019-07-05 08:00", "Asia/Tehran");
-				$('#clock').countdown(tajrobi.toDate(), clock_event);
-			}
+		<script type="text/javascript">
+			var $clock = $('#clock');
+			$('#major').on('click', function() {
+				var selectedMajor =  $( this ).html(), newTime, newText;
+				if (selectedMajor == "ریاضی") {
+					newText = "تجربی";
+					newTime = moment.tz("2019-07-05 08:00", "Asia/Tehran");
+				} else {
+					newText = "ریاضی";
+					newTime = moment.tz("2019-07-04 08:00", "Asia/Tehran");
+				}
+				$( this ).html(newText);
+				$clock.countdown(newTime.toDate());
+			});
 
 			var riazi = moment.tz("2019-07-04 08:00", "Asia/Tehran");
 
 			$('#clock').countdown(riazi.toDate(), clock_event);
 		</script>
-	</div>
+
 			</div></div></div>
 			<br> <div class="footer"> چه قدر دیر میفهمیم که زندگی، همین روزهاییست که منتظر گذشتنش هستیم... </div>
 	</header>
