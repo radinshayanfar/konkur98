@@ -41,16 +41,16 @@
 	</head>
 	
 <body id="body-fa">
-<!-- PRELOADER -->
-    <div class="spn_hol">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
+	<!-- PRELOADER -->
+		<div class="spn_hol">
+			<div class="spinner">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+		</div>
 
- <!-- END PRELOADER -->
+	<!-- END PRELOADER -->
  
 	<!-- HEADER ================================================= -->	  
 	<header>
@@ -58,25 +58,32 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>شمارش معکوس آزمون سراسری 
-					<a href="" class="major"> ریاضی </a>
+					<a href="#" id="major" onclick="major_change(); "> ریاضی </a>
 					سال ۱۳۹۸</h1><br>
-						<p class="lead" style="font-size:20px"></p>
-
-	
+					<p class="lead" style="font-size:20px"></p>
 
 	<!--CREATED BY: Appletimer persian team - copy karo sag ... :))) pas copy nakon-->
-<div id="clock" class="clock clock-fa">
-	<script type="text/javascript">
-		var nextEvent = moment.tz("2019-07-04 08:00", "Asia/Tehran");
+	<div id="clock" class="clock clock-fa">
+		<script type="text/javascript">
+			document.getElementById("major").onclick = function() {major_change()};
 
-		$('#clock').countdown(nextEvent.toDate(), clock_event);
-	</script>
- </div>
-				</div>	  
-			</div></div> <br> <div class="footer"> چه قدر دیر میفهمیم که زندگی، همین روزهاییست که منتظر گذشتنش هستیم... </div>
+			function major_change() {
+				// window.location = "http://www.google.com";
+				var tajrobi = moment.tz("2019-07-05 08:00", "Asia/Tehran");
+				$('#clock').countdown(tajrobi.toDate(), clock_event);
+			}
+
+			var riazi = moment.tz("2019-07-04 08:00", "Asia/Tehran");
+
+			$('#clock').countdown(riazi.toDate(), clock_event);
+		</script>
+	</div>
+			</div></div></div>
+			<br> <div class="footer"> چه قدر دیر میفهمیم که زندگی، همین روزهاییست که منتظر گذشتنش هستیم... </div>
 	</header>
 
 	 <!-- JAVASCRIPT ================================================== -->
+
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
