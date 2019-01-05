@@ -35,6 +35,7 @@
 		<script src="time_js/moment.js"></script>
 		<script src="time_js/moment2.js"></script>
 		<script src="time_js/countdown.js"></script>
+		<script src="time_js/event.js"></script>
 		
 		<link rel="apple-touch-icon" href="img/favicon.jpg="/>
 	</head>
@@ -65,9 +66,8 @@
 <div id="clock" class="clock clock-fa">
 	<script type="text/javascript">
 		var nextEvent = moment.tz("2019-07-04 08:00", "Asia/Tehran");
-		$('#clock').countdown(nextEvent.toDate(), function(event) {
-			$(this).html(event.strftime('%D روز<br> %H ساعت<br> %M دقیقه<br> %S ثانیه'));
-		});
+
+		$('#clock').countdown(nextEvent.toDate(), clock_event);
 	</script>
  </div>
 				</div>	  
