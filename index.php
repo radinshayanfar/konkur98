@@ -57,7 +57,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>شمارش معکوس آزمون سراسری ریاضی سال ۱۳۹۸</h1><br>
+					<h1>شمارش معکوس آزمون سراسری 
+					<a href="" class="major"> ریاضی </a>
+					سال ۱۳۹۸</h1><br>
 						<p class="lead" style="font-size:20px"></p>
 
 	
