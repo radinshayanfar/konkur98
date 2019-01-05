@@ -1,0 +1,56 @@
+/* This CSS is for small mobile */
+
+@media (max-width: 767px) {
+	header h1{
+		font-size: 20px;
+	}
+	header p.lead{
+		font-size: 15px;
+	}
+	.clock
+	{
+		font-size:3.2em;
+	}
+}
+/* This CSS is for tablet */
+
+@media (min-width: 760px) {
+	header h1{
+		font-size: 25px;
+	}
+	header p.lead{
+		font-size: 25px;
+	}
+	.clock
+	{
+		font-size:3.9em;
+	}
+}
+/* This CSS is for Medium Deviced */
+
+@media (min-width: 992px) {
+	header h1{
+		font-size: 30px;
+	}
+	header p.lead{
+		font-size: 30px;
+	}
+	.clock
+	{
+		font-size:4.4em;
+	}
+}
+/* This CSS is for large Deviced */
+
+@media (min-width: 1200px) {
+	header h1{
+		font-size: 35px;
+	}
+	header p.lead{
+		font-size: 35px;
+	}
+	.clock
+	{
+		font-size:4.8em;
+	}
+}

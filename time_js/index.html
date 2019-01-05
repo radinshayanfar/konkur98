@@ -1,0 +1,18 @@
+<html dir="rtl">
+<head>
+	<meta charset="utf-8" />
+	<script src="jquery.js"></script>
+	<script src="moment.js"></script>
+	<script src="moment2.js"></script>
+	<script src="countdown.js"></script>
+</head>
+<body>
+	<div id="clock"></div>
+ <script type="text/javascript">
+	var nextEvent = moment.tz("2016-06-13 21:30", "Asia/Tehran");
+	$('#clock').countdown(nextEvent.toDate(), function(event) {
+		$(this).html(event.strftime('%D روز %H ساعت %M دقیقه %S'));
+	});
+ </script>
+</body>
+</html>
