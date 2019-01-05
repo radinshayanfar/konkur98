@@ -1,4 +1,3 @@
-<?php /*if ($_SERVER["HTTP_CF_IPCOUNTRY"] != "IR")*/ $_GET['l'] = 'ir'; ?>
 <html>
 	<head>
 	
@@ -35,17 +34,12 @@
 		<script src="time_js/jquery.js"></script>
 		<script src="time_js/moment.js"></script>
 		<script src="time_js/moment2.js"></script>
-		<?php if (isset($_GET['l']) && $_GET['l'] == 'en')
-				echo '<script src="time_js/countdown_en.js"></script>';
-			else echo '<script src="time_js/countdown.js"></script>';
-		?>
+		<script src="time_js/countdown.js"></script>
 		
 		<link rel="apple-touch-icon" href="img/favicon.jpg="/>
 	</head>
 	
-<body <?php if (!(isset($_GET['l']) && $_GET['l'] == 'en'))
-			echo 'id="body-fa"';
-		?>>
+<body id="body-fa">
 <!-- PRELOADER -->
     <div class="spn_hol">
         <div class="spinner">
