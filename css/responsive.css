@@ -11,6 +11,10 @@
 	{
 		font-size:3.2em;
 	}
+	.adx_images {
+		width: 300;
+		height: 70;
+	}
 }
 /* This CSS is for tablet */
 
@@ -24,6 +28,10 @@
 	.clock
 	{
 		font-size:3.9em;
+	}
+	.adx_images {
+		width: 400;
+		height: 66;
 	}
 }
 /* This CSS is for Medium Deviced */
@@ -39,6 +47,10 @@
 	{
 		font-size:4.4em;
 	}
+	.adx_images {
+		width: 500;
+		height: 83;
+	}
 }
 /* This CSS is for large Deviced */
 
@@ -52,5 +64,9 @@
 	.clock
 	{
 		font-size:4.8em;
+	}
+	.adx_images {
+		width: 600;
+		height: 100;
 	}
 }
