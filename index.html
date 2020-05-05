@@ -71,16 +71,16 @@
 				var selectedMajor =  $( this ).html(), newTime, newText;
 				if (selectedMajor == "ریاضی") {
 					newText = "تجربی";
-					newTime = moment.tz("2020-07-03 08:00", "Asia/Tehran");
+					newTime = moment.tz("2020-08-21 08:00", "Asia/Tehran");
 				} else {
 					newText = "ریاضی";
-					newTime = moment.tz("2020-07-02 08:00", "Asia/Tehran");
+					newTime = moment.tz("2020-08-20 08:00", "Asia/Tehran");
 				}
 				$( this ).html(newText);
 				$clock.countdown(newTime.toDate());
 			});
 
-			var riazi = moment.tz("2020-07-02 08:00", "Asia/Tehran");
+			var riazi = moment.tz("2020-08-20 08:00", "Asia/Tehran");
 
 			$('#clock').countdown(riazi.toDate(), clock_event);
 		</script>
